@@ -13,16 +13,16 @@ exports.resetEmail = (host, resetToken) => {
   return message;
 };
 
-// exports.confirmResetPasswordEmail = () => {
-//   const message = {
-//     subject: 'Password Changed',
-//     text:
-//       `You are receiving this email because you changed your password. \n\n` +
-//       `If you did not request this change, please contact us immediately.`
-//   };
+exports.confirmResetPasswordEmail = () => {
+  const message = {
+    subject: 'Password Changed',
+    text:
+      `You are receiving this email because you changed your password. \n\n` +
+      `If you did not request this change, please contact us immediately.`
+  };
 
-//   return message;
-// };
+  return message;
+};
 
 exports.merchantSignup = (host, { resetToken, email }) => {
   const message = {
